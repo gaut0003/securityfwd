@@ -75,7 +75,6 @@ Route::post('/confirm-password', function (Request $request) {
 })->middleware(['auth', 'throttle:6,1']);
 
 
-
 Route::get('/settings', function () {
     // ...
 })->middleware(['password.confirm']);
